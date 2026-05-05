@@ -1,5 +1,5 @@
-﻿using peak.core;
-using peak.core.nodes;
+﻿using IDSImaging.Peak.API.Core;
+using IDSImaging.Peak.API.Core.Nodes;
 using Microsoft.Extensions.Logging;
 using System.Collections.Immutable;
 using VL.Devices.IDS.Advanced;

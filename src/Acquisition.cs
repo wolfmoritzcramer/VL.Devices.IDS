@@ -1,8 +1,8 @@
 ﻿using CommunityToolkit.HighPerformance;
 using Microsoft.Extensions.Logging;
-using peak.core;
-using peak.core.nodes;
-using peak.ipl;
+using IDSImaging.Peak.API.Core;
+using IDSImaging.Peak.API.Core.Nodes;
+using IDSImaging.Peak.IPL;
 using System.Text;
 using VL.Devices.IDS.Advanced;
 using VL.Lib.Basics.Resources;
@@ -233,7 +233,7 @@ namespace VL.Devices.IDS
             _imageConverter = new ImageConverter();
             _resolution = resolution;
             _correctHotPixels = CorrectHotPixels;
-            if (_correctHotPixels) _m_hotpixelCorrection = new peak.ipl.HotpixelCorrection();
+            if (_correctHotPixels) _m_hotpixelCorrection = new HotpixelCorrection();
         }
 
         public PixelFormat PixelFormat { get; set; } = new PixelFormat(PixelFormatName.BGRa8);

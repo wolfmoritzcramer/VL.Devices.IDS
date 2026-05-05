@@ -1,4 +1,4 @@
-﻿using peak.core;
+﻿using IDSImaging.Peak.API.Core;
 
 namespace VL.Devices.IDS.Advanced
 {

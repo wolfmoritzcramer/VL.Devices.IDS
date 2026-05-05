@@ -7,22 +7,21 @@
     <!--<GenerateDocumentationFile>True</GenerateDocumentationFile>-->
     <OutputPath>..\lib</OutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-
-    <VVVVInstallPath>C:\Program Files\vvvv\vvvv_gamma_5.3-0377-g503e8c1059</VVVVInstallPath>
-    <RepoRootPath>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\..'))</RepoRootPath>
-    <VVVVRepoPath>$([System.IO.Path]::GetFullPath('$(RepoRootPath)\..'))</VVVVRepoPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="VL.Core" Version="2024.6.5" />
+    <PackageReference Include="VL.Core" Version="2025.7.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="ids_peak_dotnet">
-      <HintPath>..\lib\net8.0\ids_peak_dotnet.dll</HintPath>
+    <Reference Include="IDSImaging.Peak.API">
+      <HintPath>..\lib\net8.0\IDSImaging.Peak.API.dll</HintPath>
     </Reference>
-    <Reference Include="ids_peak_ipl_dotnet">
-      <HintPath>..\lib\net8.0\ids_peak_ipl_dotnet.dll</HintPath>
+    <Reference Include="IDSImaging.Peak.Common">
+      <HintPath>..\lib\net8.0\IDSImaging.Peak.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IDSImaging.Peak.IPL">
+      <HintPath>..\lib\net8.0\IDSImaging.Peak.IPL.dll</HintPath>
     </Reference>
   </ItemGroup>
 
@@ -31,12 +30,6 @@
     <Using Include="VL.Core.Import" />
     <Using Include="VL.Lib.Collections" />
     <Using Include="Stride.Core.Mathematics" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="ids_peak_dotnet_interface.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>

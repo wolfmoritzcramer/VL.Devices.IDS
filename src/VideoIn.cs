@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using System.ComponentModel;
-using peak.core;
+using IDSImaging.Peak.API.Core;
 using VL.Lib.Basics.Video;
 using VL.Model;
 using System.Reactive.Subjects;

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TEoViClnIiPLPD6d5SyQmz" LanguageVersion="2024.6.6-0034-g3b5a74f188" Version="0.128">
-  <NugetDependency Id="R3sWC8Aqk6BOEAE2UjKeGh" Location="VL.CoreLib" Version="2024.6.6-0034-g3b5a74f188" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TEoViClnIiPLPD6d5SyQmz" LanguageVersion="2025.7.1" Version="0.128">
+  <NugetDependency Id="R3sWC8Aqk6BOEAE2UjKeGh" Location="VL.CoreLib" Version="2025.7.1" />
   <Patch Id="EeTlA4Q3fthPdUynd1PrC4">
     <Canvas Id="JDCTBaxsmzqOxqFLyMxKgM" DefaultCategory="Devices.IDS" CanvasType="FullCategory" />
     <!--
@@ -24,6 +24,5 @@
       </Patch>
     </Node>
   </Patch>
-  <PlatformDependency Id="KFZhoMRBg0nLkQUyAy74nt" Location="./lib/net6.0/ids_peak_dotnet.dll" />
   <PlatformDependency Id="EQfb5gR8CmjNO0xPUmHdRU" Location="./lib/net8.0/VL.Devices.IDS.dll" IsForward="true" />
 </Document>

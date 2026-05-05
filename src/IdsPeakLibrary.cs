@@ -1,4 +1,5 @@
-﻿using System.Reactive.Disposables;
+﻿using IDSImaging.Peak.API;
+using System.Reactive.Disposables;
 using System.Runtime.ExceptionServices;
 
 namespace VL.Devices.IDS
@@ -20,7 +21,7 @@ namespace VL.Devices.IDS
                 {
                     try
                     {
-                        peak.Library.Initialize();
+                        Library.Initialize();
                     }
                     catch (Exception e)
                     {
@@ -39,8 +40,8 @@ namespace VL.Devices.IDS
             {
                 if (Interlocked.Decrement(ref s_refCount) == 0)
                 {
-                    peak.DeviceManager.Instance().Reset();
-                    peak.Library.Close();
+                    DeviceManager.Instance().Reset();
+                    Library.Close();
                 }
             }
         }

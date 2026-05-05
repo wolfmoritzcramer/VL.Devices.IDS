@@ -1,7 +1,7 @@
 ﻿using System.Reactive.Linq;
 using System.Reactive.Disposables;
-using peak;
-using peak.core;
+using IDSImaging.Peak.API;
+using IDSImaging.Peak.API.Core;
 using VL.Core.CompilerServices;
 using VL.Lib;
 
